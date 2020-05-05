@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interview_app/UI/auth/auth.dart';
 import 'package:interview_app/UI/home.dart';
 import 'injection_container.dart' as di;
 void main()async {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: LoginPage(),
     );
   }
 }
