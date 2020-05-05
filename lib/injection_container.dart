@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:interview_app/services/authentication_service.dart';
 import 'package:interview_app/services/dialog_service.dart';
 import 'package:interview_app/services/navigation_service.dart';
 
@@ -13,5 +14,6 @@ Future<void> init() async{
   //!Services
  sl.registerLazySingleton(() => NavigationService());
  sl.registerLazySingleton(() => DialogService());
+ sl.registerLazySingleton(()=> AuthenticationService());
   
 }
